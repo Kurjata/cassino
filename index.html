@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Cassino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="seletor-dificuldade">
+        <label for="dificuldade">Dificuldade: </label>
+        <select id="dificuldade">
+            <option value="facil">Fácil</option>
+            <option value="medio" selected>Médio</option>
+            <option value="dificil">Difícil</option>
+        </select>
+    </div>
+    <div id="maquina">
+        <div id="resultado">
+            <span>🍎</span>
+            <span>🍇</span>
+            <span>🍊</span>
+        </div>
+        <div style="text-align:center;">
+            <button onclick="jogar()">Jogar</button>
+        </div>
+    </div>
+
+    <div class="modal" id="resultadoModal">
+        <div class="modal-content">
+            <span class="modal-close-btn" onclick="fecharModal()">&times;</span>
+            <p id="mensagemResultado"></p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+

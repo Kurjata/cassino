@@ -1,0 +1,119 @@
+body {
+    background-image: url(./assets/Captura\ de\ tela\ 2023-09-02\ 183230.png);
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center; /* Centraliza a imagem */
+    max-width: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#maquina {
+    border: 5px solid #FFF;
+    padding: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    background-color: #222;
+}
+
+#resultado {
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #28a745;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.seletor-dificuldade {
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário */
+    left: 10px; /* Ajuste conforme necessário */
+    background-color: #333; /* Mesma cor de fundo do botão "jogar" */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.seletor-dificuldade label {
+    color: #fff; /* Mesma cor do texto do botão "jogar" */
+    margin-right: 10px;
+}
+
+.seletor-dificuldade select {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333; /* Contraste com o fundo branco */
+    cursor: pointer;
+}
+
+/* Estilizando o hover do select */
+.seletor-dificuldade select:hover {
+    background-color: #eee;
+}
+
+/* Estilizando o focus do select */
+.seletor-dificuldade select:focus {
+    outline: none;
+    box-shadow: 0 0 3px #666;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    background-color: #333;
+    border: 2px solid gold;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1.2em;
+}
+
+.modal-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover {
+    color: gold;
+}
