@@ -1,5 +1,5 @@
 body {
-    background-image: url(./assets/Captura\ de\ tela\ 2023-09-02\ 183230.png);
+    background: black  ;
     background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: center; /* Centraliza a imagem */
